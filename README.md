@@ -7,9 +7,9 @@
 - Adapter
 - Infrastructure
 
-**Core** - Camada responsável por manter as regras de negócio, que irá ser acessada atráves de portas (entrada e saida). A implementação das portas de entrada (Inbound) ficam no core com o nome de UseCase.
+**Core** - Camada responsável por manter as regras de negócio, que irá ser acessada atráves de uma porta de entrada e chamar portas de saída. A implementação das portas de entrada (Inbound) ficam no core com o nome de UseCase.
 
-**Adapter** - Camada responsável por manter as implementações das portas de saida (oubound) e também os meios que vão chamar as portas de entrada (controller, mensageria, etc);
+**Adapter** - Camada responsável por manter as implementações das portas de saída (Oubound) e também os meios que vão chamar as portas de entrada (controller, mensageria, etc);
 
 **Infrastrucutre** - Camada responsável por manter as configurações da aplicação, como BeanConfiguration por exemplo.
 
@@ -31,7 +31,7 @@ A separação clara entre as camadas facilita os testes, pois as lógicas de neg
 
 _Adaptabilidade_:
 
-A capacidade de substituir ou adaptar facilmente componentes da infraestrutura sem afetar a lógica de negócios é uma vantagem significativa.
+A capacidade de substituir ou adaptar facilmente componentes da infraestrutura sem afetar a lógica de negócios é uma boa vantagem.
 
 _Foco no Domínio_:
 
@@ -47,6 +47,6 @@ _Excesso de Abstração_:
 
 Em alguns casos, o uso excessivo de abstrações pode tornar o código mais difícil de entender, especialmente para desenvolvedores menos experientes.
 
-_Possível Overhead_:
+_Possível Complexidade_:
 
-Em alguns casos, a adição de interfaces e camadas adicionais pode introduzir um overhead que não é justificado em todos os tipos de projetos.
+Em alguns casos, a adição de interfaces e camadas adicionais pode introduzir uma complexidade que não é justificado em todos os tipos de projetos.
